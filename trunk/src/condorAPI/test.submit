@@ -1,0 +1,8 @@
+universe = vanilla
+executable = test
+arguments = 1000
+#hold = True
+log_xml = True
+log = log.other
+
+queue

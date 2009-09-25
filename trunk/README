@@ -1,0 +1,42 @@
+* README *
+
+WHAT IS THIS
+
+  This package meant to help people to write Java programs 
+  that submit to and monitor Condor.
+  This package provides classes that submit jobs invoking 
+  'condor_submit' and monitor log file to find the status
+  of jobs.
+
+DIRECTORIES
+  This package have following directories.
+  - lib        - contains jar files
+  - src        - contains source files
+  - src/sample - contains sample codes for the API
+  - doc        - contains html documentation pages generated 
+                 by javadoc
+
+KNOWN DEFECTS
+- To make log monitoring easy, this package force to use XML
+  log format. This may annoy people since the format is not 
+  meant to be read by human being
+
+- Only few kinds of Events are propery handled. If you want
+  to handle Globus related events propery, you have to add
+  state transition code at the switch statement in
+  Job.event().
+
+- Few documentation. Fortunately, the approach is so straight 
+  forward and I believe it does not need any documentation
+  if you are familiar with Condor.
+
+WEB PAGE
+  http://staff.aist.go.jp/hide-nakada/condor_java_api
+
+UPDATE
+  Feb. 22, 2005 - released
+  Feb. 21, 2008 - repackaged.
+                  added some method to 'Job'. 
+                  'Cluster' now implements Collection<Job>.
+
+-Hidemoto (hide-nakada@aist.go.jp)

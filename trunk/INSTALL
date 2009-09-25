@@ -1,0 +1,5 @@
+INSTALL
+
+- install jar files in the 'lib' directory
+- setup your CLASSPATH to include the jar files
+- enjoy!
