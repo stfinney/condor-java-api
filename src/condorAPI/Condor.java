@@ -279,7 +279,7 @@ public class Condor implements Runnable{
 	  }
 	  String line;
 	  line = lnr.readLine(); // skip 'Submitting job(s).'
-	  line = lnr.readLine(); // skip 'Logging submit event(s).'
+	  //line = lnr.readLine(); // skip 'Logging submit event(s).'
 	  line = lnr.readLine(); // read 'X job(s) submitted to cluster XXX'.
 	  Pattern pattern = Pattern.compile(SUBMIT_OUTPUT_PATTERN);
 	  Matcher matcher = pattern.matcher(line);
